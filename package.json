@@ -1,0 +1,15 @@
+{
+  "name": "bitandbang",
+  "version": "0.0.1",
+  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "main": "index.js",
+  "bin": {
+    "bitandbang": "./bin/card.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "license": "MIT"
+}
