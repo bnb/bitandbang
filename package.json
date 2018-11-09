@@ -8,13 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/webpack/webpack.git"
+    "url": "https://github.com/bnb/bitandbang.git"
   },
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0"
+  }
 }
