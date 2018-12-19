@@ -17,7 +17,11 @@
   "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
   "license": "MIT",
   "dependencies": {
+    "boxen": "^2.1.0",
     "chalk": "^2.4.1",
     "commander": "^2.19.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
   }
 }
