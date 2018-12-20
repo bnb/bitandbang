@@ -1,5 +1,5 @@
 It's me, Carlos!
-> based in (@bitandbang)[https://github.com/bnb/bitandbang] work
+> based in [@bitandbang](https://github.com/bnb/bitandbang) work
 
 # Usage
 Via npx:
