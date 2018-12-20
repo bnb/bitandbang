@@ -1,17 +1,17 @@
 {
   "name": "carlosazaustre",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A personal card for Carlos Azaustre (@carlosazaustre)",
   "main": "index.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "carlosazaustre": "./bin/card.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/carlosazaustre/bitandbang.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard"
   },
   "keywords": [],
   "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es)",
