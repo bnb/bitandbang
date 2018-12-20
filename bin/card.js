@@ -6,7 +6,7 @@ const chalk = require('chalk')
 const boxen = require('boxen')
 
 // Define options for Boxen
-let options = {
+const options = {
   padding: 1,
   margin: 1,
   borderStyle: 'round'
