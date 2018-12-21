@@ -13,10 +13,18 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
     "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
   "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
   "license": "MIT",
   "files": [
