@@ -15,7 +15,7 @@
     "build": "node build.js",
     "start": "node ./bin/card.js",
     "develop": "npm-run-all --parallel watch:build watch:app",
-    "watch:build": "nodemon build.js",
+    "watch:build": "nodemon --watch bin build.js",
     "watch:app": "nodemon ./bin/card.js",
     "lint": "standard"
   },
