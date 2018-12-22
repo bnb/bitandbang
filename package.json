@@ -1,6 +1,6 @@
 {
   "name": "drpoindexter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A personal card for David R. Poindexter (@drpoindexter)",
   "main": "/bin/card.js",
   "bin": {
