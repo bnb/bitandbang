@@ -17,7 +17,8 @@ const options = {
 const data = {
   name: chalk.white("                   David R. Poindexter"),
   handle: chalk.white("drpoindexter"),
-  work: chalk.white("AWS Cloud Practice Lead at CleanSlate Technology Group"),
+  work: chalk.white("AWS Cloud Practice Lead"),
+  company: chalk.white("CleanSlate TG"),
   altTables: chalk.white("Sanitize Those Inputs "),
   twitter: chalk.gray("https://twitter.com/") + chalk.cyan("drpoindexter"),
   npm: chalk.gray("https://npmjs.com/") + chalk.red("~drpoindexter"),
@@ -27,6 +28,7 @@ const data = {
   web: chalk.cyan("https://drp3.me"),
   npx: chalk.red("npx") + " " + chalk.white("drpoindexter"),
   labelWork: chalk.white.bold("         Work 💻:"),
+  labelCompany: chalk.white.bold("         Team 🏢: "),
   labelTables: chalk.white.bold("Robert Tables 😈:"),
   labelTwitter: chalk.white.bold("      Twitter 🐦:"),
   labelnpm: chalk.white.bold("          npm 📦:"),
@@ -41,6 +43,7 @@ const data = {
 const newline = "\n";
 const heading = `${data.name} / ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
+const companying = `${data.labelCompany} ${data.company}`;
 const injecting = `${data.labelTables}  ${data.altTables}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const npming = `${data.labelnpm}  ${data.npm}`;
@@ -56,6 +59,8 @@ const output =
   newline +
   newline + // Add one whole blank line
   working +
+  newline + // data.labelWork + data.work
+  companying +
   newline + // data.labelWork + data.work
   injecting +
   newline +
