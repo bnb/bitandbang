@@ -52,9 +52,9 @@ const asciiOptions = {
   width: '30%'
 }
 
-const getAvatar = async () => {
-  const image = path.join(__dirname, 'resources', 'avatar.jpg')
+const getAvatar = async imageName => {
   try {
+    const image = path.join(__dirname, 'resources', imageName)
     return await asciify(image, asciiOptions)
   } catch (error) {
     console.log(error.message)
@@ -63,27 +63,25 @@ const getAvatar = async () => {
 }
 
 async function getOutput() {
-  const avatar = await getAvatar()
+  const imageName = 'avatar.jpg'
+  const avatar = await getAvatar(imageName)
 
   // Put all our output together into a single variable so we can use boxen effectively
   const output =
     heading + // data.name + data.handle
+    newline.repeat(2) +
+    working + // data.labelWork + data.work
+    newline.repeat(2) +
+    twittering + // data.labelTwitter + data.twitter
     newline +
-    newline + // Add one whole blank line
-    working +
-    newline + // data.labelWork + data.work
+    npming + // data.labelnpm + data.npm
     newline +
-    twittering +
-    newline + // data.labelTwitter + data.twitter
-    npming +
-    newline + // data.labelnpm + data.npm
-    githubing +
-    newline + // data.labelGitHub + data.github
-    linkedining +
-    newline + // data.labelLinkedIn + data.linkedin
+    githubing + // data.labelGitHub + data.github
+    newline +
+    linkedining + // data.labelLinkedIn + data.linkedin
+    newline +
     webing +
-    newline +
-    newline + // data.labelWeb + data.web
+    newline.repeat(2) +
     carding // data.labelCard + data.npx
 
   const table = new Table()
