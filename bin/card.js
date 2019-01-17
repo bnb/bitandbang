@@ -15,7 +15,7 @@ let options = {
 let data = {
   'name': chalk.white.bold('Carlos Azaustre'),
   'handle': chalk.yellow('@carlosazaustre'),
-  'work': chalk.white('👨🏻‍💻 JavaScript Developer\n🎓 BSc in Telematics Engineering'),
+  'work': chalk.white('👨🏻‍💻 Senior Frontend Developer @ IBM Research \n🎓 BSc in Telematics Engineering'),
   'twitter': chalk.yellow('https://twitter.com/carlosazaustre'),
   'github': chalk.yellow('https://github.com/carlosazaustre'),
   'linkedin': chalk.yellow('https://linkedin.com/in/carlosazaustre'),
