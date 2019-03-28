@@ -14,12 +14,12 @@ let options = {
 // Text + chalk definitions
 let data = {
   'name': chalk.white.bold('Carlos Azaustre'),
-  'handle': chalk.yellow('@carlosazaustre'),
+  'handle': chalk.hex('#D15C22#')('@carlosazaustre'),
   'work': chalk.white('👨🏻‍💻 Senior Frontend Developer @ IBM Research \n🎓 BSc in Telematics Engineering'),
-  'twitter': chalk.yellow('https://twitter.com/carlosazaustre'),
-  'github': chalk.yellow('https://github.com/carlosazaustre'),
-  'linkedin': chalk.yellow('https://linkedin.com/in/carlosazaustre'),
-  'web': chalk.yellow('https://carlosazaustre.es'),
+  'twitter': chalk.hex('#D15C22')('https://twitter.com/carlosazaustre'),
+  'github': chalk.hex('#D15C22')('https://github.com/carlosazaustre'),
+  'linkedin': chalk.hex('#D15C22')('https://linkedin.com/in/carlosazaustre'),
+  'web': chalk.hex('#D15C22')('https://carlosazaustre.es'),
   'npx': chalk.white('npx carlosazaustre'),
   'labelTwitter': chalk.white.bold('   Twitter:'),
   'labelGitHub': chalk.white.bold('    GitHub:'),
@@ -47,4 +47,4 @@ let output = heading + newline +
   webing + newline + newline +
   carding
 
-console.log(chalk.yellow(boxen(output, options)))
+console.log(chalk.hex('#D15C22')(boxen(output, options)))
