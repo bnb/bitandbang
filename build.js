@@ -24,7 +24,7 @@ const data = {
   github: chalk.gray('https://github.com/') + chalk.green('bnb'),
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
   web: chalk.cyan('https://bnb.im'),
-  npx: chalk.red('npx') + ' ' + chalk.white('bitandbang'),
+  npx: chalk.red('npx') + ' ' + chalk.white('@bnb/card  (via GitHub Package Registry)'),
   labelWork: chalk.white.bold('       Work:'),
   labelOpenSource: chalk.white.bold('Open Source:'),
   labelTwitter: chalk.white.bold('    Twitter:'),
