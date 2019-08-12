@@ -10,9 +10,6 @@
     "type": "git",
     "url": "https://github.com/steoneill/card"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "Ste O'Neill <hi@steoneill.me> (http://steoneill.dev)",
   "license": "MIT",
