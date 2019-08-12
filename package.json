@@ -1,20 +1,20 @@
 {
-  "name": "bitandbang",
+  "name": "steoneill",
   "version": "1.1.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "description": "A personal card for Ste O'Neill (@steoneill)",
   "main": "index.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "steoneill": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/bitandbang.git"
+    "url": "https://github.com/steoneill/card"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Ste O'Neill <hi@steoneill.me> (http://steoneill.dev)",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
