@@ -13,9 +13,9 @@ let options = {
 }
 // Text + chalk definitions
 let data = {
-  'name': chalk.white.bold('Carlos Azaustre'),
+  'name': chalk.white.bold('👋 Hi! I\'m Carlos Azaustre'),
   'handle': chalk.hex('#D15C22#')('@carlosazaustre'),
-  'work': chalk.white('👨🏻‍💻 Senior Frontend Developer @ IBM Research \n🎓 BSc in Telematics Engineering'),
+  'work': chalk.white('Senior Frontend Engineer @ Eventbrite \nBSc, Telematics Engineering'),
   'twitter': chalk.hex('#D15C22')('https://twitter.com/carlosazaustre'),
   'github': chalk.hex('#D15C22')('https://github.com/carlosazaustre'),
   'linkedin': chalk.hex('#D15C22')('https://linkedin.com/in/carlosazaustre'),
