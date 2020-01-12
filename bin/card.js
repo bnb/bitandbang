@@ -15,7 +15,7 @@ let options = {
 let data = {
   'name': chalk.white.bold('👋 Hi! I\'m Carlos Azaustre'),
   'handle': chalk.hex('#D15C22#')('@carlosazaustre'),
-  'work': chalk.white('Senior Frontend Engineer @ Eventbrite \nBSc, Telematics Engineering'),
+  'work': chalk.white('💻 Senior Front-End Engineer @ Eventbrite \n 🎓 BSc, Telematics Engineering'),
   'twitter': chalk.hex('#D15C22')('https://twitter.com/carlosazaustre'),
   'github': chalk.hex('#D15C22')('https://github.com/carlosazaustre'),
   'linkedin': chalk.hex('#D15C22')('https://linkedin.com/in/carlosazaustre'),
@@ -39,12 +39,12 @@ var webing = `${data.labelWeb}  ${data.web}`
 var carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-let output = heading + newline +
+let output = newline + heading + newline + newline +
   working + newline + newline +
   twittering + newline +
   githubing + newline +
   linkedining + newline +
   webing + newline + newline +
-  carding
+  carding + newline
 
-console.log(chalk.hex('#D15C22')(boxen(output, options)))
+console.log(output)

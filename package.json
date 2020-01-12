@@ -13,11 +13,14 @@
   "scripts": {
     "lint": "standard"
   },
-  "keywords": [],
+  "keywords": [
+    "npm card",
+    "personal card",
+    "business card"
+  ],
   "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es)",
   "license": "MIT",
   "dependencies": {
-    "boxen": "^2.1.0",
     "chalk": "^2.4.1",
     "commander": "^2.19.0"
   },
