@@ -3,14 +3,7 @@
 
 // Pull in our modules
 var chalk = require('chalk')
-var boxen = require('boxen')
 
-// Define options for Boxen
-let options = {
-  padding: 1,
-  margin: 1,
-  borderStyle: 'double-single'
-}
 // Text + chalk definitions
 let data = {
   'name': chalk.white.bold('👋 Hi! I\'m Carlos Azaustre'),
