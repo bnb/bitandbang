@@ -1,6 +1,6 @@
 {
   "name": "carlosazaustre",
-  "version": "2.1.1",
+  "version": "3.1.1",
   "description": "A personal card for Carlos Azaustre (@carlosazaustre)",
   "main": "index.js",
   "bin": {
