@@ -15,7 +15,7 @@
     "build": "node build.js",
     "dev": "npm run build && node ./bin/card.js",
     "lint": "standard",
-    "test": "echo \"Nothing to do here\" && exit 1"
+    "test": "echo \"Nothing to do here\" && exit 0"
   },
   "keywords": [
     "card",
