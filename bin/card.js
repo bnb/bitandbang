@@ -19,6 +19,7 @@ const data = {
   work: chalk.white(
     "Software Developer @ Sky && Founder @ Little Boat Digital"
   ),
+  lookingForWork: chalk.cyan("I'm looking for freelance work!"),
   twitter: chalk.cyan("https://twitter.com/stecodes"),
   github: chalk.cyan("https://github.com/steoneill"),
   linkedin: chalk.cyan("https://linkedin.com/in/steoneill"),
@@ -35,6 +36,7 @@ const data = {
 // Actual strings we're going to output
 const newline = "\n";
 const heading = `${data.name} ${data.handle}`;
+const work = `${data.lookingForWork}`;
 const working = `${data.labelWork}  ${data.work}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
@@ -48,6 +50,8 @@ const output =
   newline +
   newline +
   working +
+  newline +
+  lookingForWork + 
   newline +
   twittering +
   newline +
