@@ -1,14 +1,14 @@
 {
-  "name": "@bnb/card",
-  "version": "1.6.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "name": "oscard0m",
+  "version": "2.0.2",
+  "description": "A personal card for Oscar Dominguez (@oscard0m)",
   "main": "/bin/card.js",
   "bin": {
     "bitandbang": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bnb/bitandbang.git"
+    "url": "git+https://github.com/oscard0m/oscard0m-card.git"
   },
   "homepage": "https://bnb.im",
   "scripts": {
@@ -26,7 +26,7 @@
     "npx card",
     "business card"
   ],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Oscar Dominguez <dominguez.celada@gmail.com> (http://oscard0m.dev)",
   "license": "MIT",
   "files": [
     "bin/card.js",
@@ -38,7 +38,7 @@
     "standard": "^12.0.1"
   },
   "bugs": {
-    "url": "https://github.com/bnb/bitandbang/issues"
+    "url": "https://github.com/oscard0m/oscard0m-card/issues"
   },
   "dependencies": {},
   "publishConfig": {
