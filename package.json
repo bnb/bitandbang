@@ -15,7 +15,7 @@
     "prepublish": "npm run build",
     "build": "node build.js",
     "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard",
+    "lint": "prettier -c .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -35,12 +35,11 @@
   "devDependencies": {
     "boxen": "^2.1.0",
     "chalk": "^2.4.1",
-    "standard": "^12.0.1"
+    "prettier": "^2.5.0"
   },
   "bugs": {
     "url": "https://github.com/oscard0m/oscard0m-card/issues"
   },
-  "dependencies": {},
   "publishConfig": {
     "registry": "https://npm.registry.github.com/"
   }
