@@ -15,8 +15,7 @@
     "prepublish": "npm run build",
     "build": "node build.js",
     "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard"
   },
   "keywords": [
     "card",
