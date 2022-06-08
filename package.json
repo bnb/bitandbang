@@ -39,8 +39,5 @@
   "bugs": {
     "url": "https://github.com/bnb/bitandbang/issues"
   },
-  "dependencies": {},
-  "publishConfig": {
-    "registry": "https://npm.registry.github.com/"
-  }
+  "dependencies": {}
 }
