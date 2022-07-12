@@ -16,7 +16,8 @@ const options = {
 // Text + chalk definitions
 const data = {
   name: chalk.white('           Tierney Cyren'),
-  handle: chalk.white('bitandbang / bnb'),
+  handle: chalk.white('bitandbang'),
+  shorthandle: chalk.white('bnb'),
   work: chalk.white('Staff Developer Advocate at Twilio'),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
   npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
@@ -35,7 +36,7 @@ const data = {
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} / ${data.handle}`
+const heading = `${data.name} / ${data.handle} / ${data.shorthandle}`
 const working = `${data.labelWork}  ${data.work}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const npming = `${data.labelnpm}  ${data.npm}`
