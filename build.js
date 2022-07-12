@@ -17,7 +17,7 @@ const options = {
 const data = {
   name: chalk.white('           Tierney Cyren'),
   handle: chalk.white('bitandbang / bnb'),
-  work: chalk.white('Staff Developer Advocate at ??????'),
+  work: chalk.white('Staff Developer Advocate at Twilio'),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
   npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
   github: chalk.gray('https://github.com/') + chalk.green('bnb'),
