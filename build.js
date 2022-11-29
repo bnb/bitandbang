@@ -20,7 +20,7 @@ const data = {
   shorthandle: chalk.white('bnb'),
   work: chalk.white('Principal Developer Advocate at Twilio (::)'),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-  mastodon: chalk.gray('https://mastodon.social/') + chalk.magenta('bnb'),
+  mastodon: chalk.gray('https://mastodon.social/') + chalk.magenta('@bnb'),
   npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
   github: chalk.gray('https://github.com/') + chalk.green('bnb'),
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
