@@ -1,6 +1,6 @@
 {
   "name": "bitandbang",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "A personal card for Tierney Cyren (@bitandbang)",
   "main": "/bin/card.js",
   "bin": {
