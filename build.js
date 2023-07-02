@@ -13,6 +13,20 @@ const options = {
   borderStyle: 'round'
 }
 
+// DateTime Stuff
+
+const dateCalculator = {
+  dateDifference: function dateDifference (date) {
+    let difference = new Date().getTime() - new Date(date).getTime();
+    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+    return TotalDays;
+  }
+}
+
+const dates = {
+  updateDate: new Date('07/01/2023')
+}
+
 // Text + chalk definitions
 const data = {
   name: chalk.white('           🐝 / Jarret Bryan'),
@@ -23,14 +37,16 @@ const data = {
   github: chalk.gray('https://github.com/') + chalk.green('jarretbryan'),
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('jarretbryan'),
   web: chalk.cyan('https://jarretbryan.online'),
-  npx: chalk.red('npx') + ' ' + chalk.white('jaybeekeeper'),
+  npx: chalk.red('npx') + ' ' + chalk.white('jaybeecard'),
+  dates: chalk.blue.bold(`    Last Updated ${dateCalculator.dateDifference(dates.updateDate)} days ago.`),
   labelWork: chalk.white.bold('    Work:'),
   labelBsky: chalk.white.bold(' Bluesky:'),
   labelMastodon: chalk.white.bold('Mastodon:'),
   labelGitHub: chalk.white.bold('  GitHub:'),
   labelLinkedIn: chalk.white.bold('LinkedIn:'),
   labelWeb: chalk.white.bold('     Web:'),
-  labelCard: chalk.white.bold('    Card:')
+  labelCard: chalk.white.bold('    Card:'),
+
 }
 
 // Actual strings we're going to output
@@ -43,6 +59,7 @@ const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
 const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
+const dating = `${data.dates}`
 
 // Put all our output together into a single variable so we can use boxen effectively
 const output = heading + // data.name + data.handle
@@ -53,6 +70,8 @@ const output = heading + // data.name + data.handle
                githubing + newline + // data.labelGitHub + data.github
                linkedining + newline + // data.labelLinkedIn + data.linkedin
                webing + newline + newline + // data.labelWeb + data.web
-               carding // data.labelCard + data.npx
+               carding + newline + newline + // data.labelCard + data.npx
+               dating 
+
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))

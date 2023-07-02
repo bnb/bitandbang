@@ -1,14 +1,14 @@
 {
-  "name": "jaybeekeeper",
+  "name": "jaybeecard",
   "version": "1.0.0",
   "description": "A personal card for Jarret Bryan (@jaybeekeeper)",
   "main": "/bin/card.js",
   "bin": {
-    "jaybeekeeper": "./bin/card.js"
+    "jaybeecard": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jarretbryan/jaybeekeeper_card.git"
+    "url": "git+https://github.com/jarretbryan/jaybeecard.git"
   },
   "homepage": "https://jarretbryan.online",
   "scripts": {
@@ -37,7 +37,7 @@
     "standard": "^12.0.1"
   },
   "bugs": {
-    "url": "https://github.com/jarretbryan/jaybeekeeper_card/pulls"
+    "url": "https://github.com/jarretbryan/jaybeecard/pulls"
   },
   "dependencies": {}
 }
