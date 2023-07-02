@@ -1,16 +1,16 @@
 {
-  "name": "bitandbang",
-  "version": "3.0.1",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "name": "jaybeekeeper",
+  "version": "1.0.0",
+  "description": "A personal card for Jarret Bryan (@jaybeekeeper)",
   "main": "/bin/card.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "jaybeekeeper": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bnb/bitandbang.git"
+    "url": "git+https://github.com/jarretbryan/jaybeekeeper_card.git"
   },
-  "homepage": "https://bnb.im",
+  "homepage": "https://jarretbryan.online",
   "scripts": {
     "prepublish": "npm run build",
     "build": "node build.js",
@@ -37,7 +37,7 @@
     "standard": "^12.0.1"
   },
   "bugs": {
-    "url": "https://github.com/bnb/bitandbang/issues"
+    "url": "https://github.com/jarretbryan/jaybeekeeper_card/pulls"
   },
   "dependencies": {}
 }
