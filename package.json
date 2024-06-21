@@ -1,6 +1,6 @@
 {
 	"name": "bitandbang",
-	"version": "4.0.0",
+	"version": "4.0.1",
 	"description": "A personal card for Tierney Cyren (@bitandbang)",
 	"main": "/bin/card.mjs",
 	"bin": {
@@ -19,10 +19,20 @@
 		"lint": "npx @biomejs/biome lint --write",
 		"check": "npx @biomejs/biome check --write"
 	},
-	"keywords": ["card", "npm", "npm card", "npx", "npx card", "business card"],
+	"keywords": [
+		"card",
+		"npm",
+		"npm card",
+		"npx",
+		"npx card",
+		"business card"
+	],
 	"author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
 	"license": "MIT",
-	"files": ["bin/card.mjs", "bin/output"],
+	"files": [
+		"bin/card.mjs",
+		"bin/output"
+	],
 	"devDependencies": {
 		"@biomejs/biome": "1.8.2",
 		"boxen": "^7.1.1",
