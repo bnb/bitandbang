@@ -2,9 +2,9 @@
   "name": "bitandbang",
   "version": "3.0.2",
   "description": "A personal card for Tierney Cyren (@bitandbang)",
-  "main": "/bin/card.js",
+  "main": "/bin/card.mjs",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "bitandbang": "./bin/card.mjs"
   },
   "repository": {
     "type": "git",
@@ -13,8 +13,8 @@
   "homepage": "https://bnb.im",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "node build.js",
-    "dev": "npm run build && node ./bin/card.js",
+    "build": "node build.mjs",
+    "dev": "npm run build && node ./bin/card.mjs",
     "lint": "standard"
   },
   "keywords": [
@@ -28,13 +28,13 @@
   "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
   "license": "MIT",
   "files": [
-    "bin/card.js",
+    "bin/card.mjs",
     "bin/output"
   ],
   "devDependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "standard": "^12.0.1"
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "standard": "^17.1.0"
   },
   "bugs": {
     "url": "https://github.com/bnb/bitandbang/issues"
