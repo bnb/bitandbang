@@ -1,43 +1,34 @@
 {
-  "name": "bitandbang",
-  "version": "4.0.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
-  "main": "/bin/card.mjs",
-  "bin": {
-    "bitandbang": "./bin/card.mjs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bnb/bitandbang.git"
-  },
-  "homepage": "https://bnb.im",
-  "scripts": {
-    "prepublish": "npm run build",
-    "build": "node build.mjs",
-    "dev": "npm run build && node ./bin/card.mjs",
-    "lint": "standard"
-  },
-  "keywords": [
-    "card",
-    "npm",
-    "npm card",
-    "npx",
-    "npx card",
-    "business card"
-  ],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
-  "license": "MIT",
-  "files": [
-    "bin/card.mjs",
-    "bin/output"
-  ],
-  "devDependencies": {
-    "boxen": "^7.1.1",
-    "chalk": "^5.3.0",
-    "standard": "^17.1.0"
-  },
-  "bugs": {
-    "url": "https://github.com/bnb/bitandbang/issues"
-  },
-  "dependencies": {}
+	"name": "bitandbang",
+	"version": "4.0.0",
+	"description": "A personal card for Tierney Cyren (@bitandbang)",
+	"main": "/bin/card.mjs",
+	"bin": {
+		"bitandbang": "./bin/card.mjs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bnb/bitandbang.git"
+	},
+	"homepage": "https://bnb.im",
+	"scripts": {
+		"prepublish": "npm run build",
+		"build": "node build.mjs",
+		"dev": "npm run build && node ./bin/card.mjs",
+		"format": "npx @biomejs/biome format --write",
+		"lint": "npx @biomejs/biome lint --write",
+		"check": "npx @biomejs/biome check --write"
+	},
+	"keywords": ["card", "npm", "npm card", "npx", "npx card", "business card"],
+	"author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+	"license": "MIT",
+	"files": ["bin/card.mjs", "bin/output"],
+	"devDependencies": {
+		"@biomejs/biome": "1.8.2",
+		"boxen": "^7.1.1",
+		"chalk": "^5.3.0"
+	},
+	"bugs": {
+		"url": "https://github.com/bnb/bitandbang/issues"
+	}
 }

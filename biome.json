@@ -1,0 +1,17 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	}
+}
