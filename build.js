@@ -1,10 +1,8 @@
-'use strict'
-
 // Pull in our modules
-const chalk = require('chalk')
+const { white, gray, cyan, red, magenta, green, blue } = require('chalk')
 const boxen = require('boxen')
-const fs = require('fs')
-const path = require('path')
+const { writeFileSync } = require('node:fs')
+const { join } = require('node:path')
 
 // Define options for Boxen
 const options = {
@@ -15,25 +13,25 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('           Tierney Cyren'),
-  handle: chalk.white('bitandbang'),
-  shorthandle: chalk.white('bnb'),
-  work: chalk.white('Principal Developer Advocate at Twilio (::)'),
-  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-  mastodon: chalk.gray('https://mastodon.social/') + chalk.magenta('@bnb'),
-  npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
-  github: chalk.gray('https://github.com/') + chalk.green('bnb'),
-  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
-  web: chalk.cyan('https://bnb.im'),
-  npx: chalk.red('npx') + ' ' + chalk.white('bitandbang'),
-  labelWork: chalk.white.bold('    Work:'),
-  labelTwitter: chalk.white.bold(' Twitter:'),
-  labelMastodon: chalk.white.bold('Mastodon:'),
-  labelnpm: chalk.white.bold('     npm:'),
-  labelGitHub: chalk.white.bold('  GitHub:'),
-  labelLinkedIn: chalk.white.bold('LinkedIn:'),
-  labelWeb: chalk.white.bold('     Web:'),
-  labelCard: chalk.white.bold('    Card:')
+  name: white('           Tierney Cyren'),
+  handle: white('bitandbang'),
+  shorthandle: white('bnb'),
+  work: white('Principal Developer Advocate at Twilio (::)'),
+  twitter: gray('https://twitter.com/') + cyan('bitandbang'),
+  mastodon: gray('https://mastodon.social/') + magenta('@bnb'),
+  npm: gray('https://npmjs.com/') + red('~bnb'),
+  github: gray('https://github.com/') + green('bnb'),
+  linkedin: gray('https://linkedin.com/in/') + blue('bitandbang'),
+  web: cyan('https://bnb.im'),
+  npx: `${red('npx')} ${white('bitandbang')}`,
+  labelWork: white.bold('    Work:'),
+  labelTwitter: white.bold(' Twitter:'),
+  labelMastodon: white.bold('Mastodon:'),
+  labelnpm: white.bold('     npm:'),
+  labelGitHub: white.bold('  GitHub:'),
+  labelLinkedIn: white.bold('LinkedIn:'),
+  labelWeb: white.bold('     Web:'),
+  labelCard: white.bold('    Card:')
 }
 
 // Actual strings we're going to output
@@ -60,4 +58,4 @@ const output = heading + // data.name + data.handle
                webing + newline + newline + // data.labelWeb + data.web
                carding // data.labelCard + data.npx
 
-fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
+writeFileSync(join(__dirname, 'bin/output'), green(boxen(output, options)))
