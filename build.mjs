@@ -17,16 +17,14 @@ const data = {
 	handle: chalk.white('bitandbang'),
 	shorthandle: chalk.white('bnb'),
 	work: chalk.white('Principal Developer Advocate on Break @ Recurse Center'),
-	twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-	mastodon: chalk.gray('https://mastodon.social/') + chalk.magenta('@bnb'),
+	bluesky: chalk.gray('https://bsky.app/profile/') + chalk.cyan('bnb.im'),
 	npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
 	github: chalk.gray('https://github.com/') + chalk.green('bnb'),
 	linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
 	web: chalk.cyan('https://bnb.im'),
 	npx: `${chalk.red('npx')} ${chalk.white('bitandbang')}`,
 	labelWork: chalk.white.bold('    Work:'),
-	labelTwitter: chalk.white.bold(' Twitter:'),
-	labelMastodon: chalk.white.bold('Mastodon:'),
+	labelBluesky: chalk.white.bold(' Bluesky:'),
 	labelnpm: chalk.white.bold('     npm:'),
 	labelGitHub: chalk.white.bold('  GitHub:'),
 	labelLinkedIn: chalk.white.bold('LinkedIn:'),
@@ -38,7 +36,7 @@ const data = {
 const newline = '\n';
 const heading = `${data.name} / ${data.handle} / ${data.shorthandle}`;
 const working = `${data.labelWork}  ${data.work}`;
-const twittering = `${data.labelTwitter}  ${data.twitter}`;
+const blueskying = `${data.labelBluesky}  ${data.bluesky}`;
 const mastodoning = `${data.labelMastodon}  ${data.mastodon}`;
 const npming = `${data.labelnpm}  ${data.npm}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
@@ -53,10 +51,8 @@ const output =
 	newline + // Add one whole blank line
 	working +
 	newline + // data.labelWork + data.work
-	twittering +
-	newline + // data.labelTwitter + data.twitter
-	mastodoning +
-	newline + // data.labelTwitter + data.twitter
+	blueskying +
+	newline + // ${data.labelTwitter}  ${data.twitter}
 	npming +
 	newline + // data.labelnpm + data.npm
 	githubing +
