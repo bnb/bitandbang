@@ -16,7 +16,7 @@ const data = {
 	name: chalk.white('           Tierney Cyren'),
 	handle: chalk.white('bitandbang'),
 	shorthandle: chalk.white('bnb'),
-	work: chalk.white('Principal Developer Advocate at Twilio (::)'),
+	work: chalk.white('Principal Developer Advocate on Break @ Recurse Center'),
 	twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
 	mastodon: chalk.gray('https://mastodon.social/') + chalk.magenta('@bnb'),
 	npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
